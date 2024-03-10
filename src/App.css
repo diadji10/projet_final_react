@@ -8,6 +8,9 @@
   height: 100vh;
   text-align: center;
   background: url("./Images/pexels-michael-block-3225517.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
