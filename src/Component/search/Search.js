@@ -37,8 +37,22 @@ const Search = () => {
           Rechercher
         </button>
       </form>
-      {loading && <p>Chargement...</p>}
-      {error && <p>{error}</p>}
+      {loading && (
+        <div className="weather-info">
+          <p>Chargement...</p>
+        </div>
+      )}
+      {error && (
+        <div className="weather-info">
+          <img alt="" src="/télécharger (1).jpeg" />
+          <br />
+          <br />
+          <br />
+          <p style={{ fontFamily: "Plus jakarta, sans-serif" }}>
+            Une erreur s'est produite. Veuillez réessayer
+          </p>
+        </div>
+      )}
       {weatherData && (
         <div className="weather-info">
           <h2>{weatherData.name}</h2>
